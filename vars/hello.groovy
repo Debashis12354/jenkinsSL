@@ -1,5 +1,6 @@
+@Library('shared-library')_
 
-def call() {
- sh"echo hello world"
-}
-
+ stage('Demo') {
+     echo 'Hello, Welcome'
+     helloWorld 'Albert'
+ }
