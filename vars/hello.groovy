@@ -1,6 +1,3 @@
-@Library('shared-library')_
-
- stage('Demo') {
-     echo 'Hello, Welcome'
-     helloWorld 'Albert'
- }
+def call(String name = 'human') {
+  echo "Hello, ${name}."
+}
